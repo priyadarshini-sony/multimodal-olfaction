@@ -1,5 +1,5 @@
 
-# AromaSense: Optimizing Learning Across Multimodal Transfer Features for Modeling Olfactory Perception
+# Optimizing Learning Across Multimodal Transfer Features for Modeling Olfactory Perception
 
 Daniel Shin\*, Gao Pei\*, Priyadarshini Kumari, Tarek Besold
 

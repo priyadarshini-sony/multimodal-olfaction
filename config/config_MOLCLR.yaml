@@ -1,0 +1,47 @@
+train:
+  model_type: MOLCLR
+  data_dir: "./data_multi/"
+  batchsize: 32 #16, 20 
+  epochs: 5000
+  verbose: 1
+  num_run: 5
+  lr:  1e-5 # 1e-05 #0.0001
+  start_split: 0
+  end_split: 5
+  loss: binary_crossentropy
+  lr_decay: True
+  pos_weight: 1
+  neg_weight: 1
+
+  numeric_feature: 1388
+  embed_feature: 512
+  molclr_feature: 512
+  l_target: 91
+
+  train_percent: 20
+  dropout_prob: 0.0
+
+  #num_duplication: 
+
+  # hyperparameters for transformer
+  image_size: 166
+  time_size: 1
+  fre_size: 5 #10 
+  dim: 32 #set it to 64/128, get better results
+  depth: 8 
+  heads: 6 
+  mlp_dim: 256 
+  dim_head: 64
+
+  # hyperparameters for MPNN
+  in_n1: 9  # feature dimension of nodes and edges
+  in_n2: 4  # feature dimension of nodes and edges
+  hidden_state_size: 20  # dimension of hidden state/embedding
+  message_size: 20  # dimension of message
+  n_layers: 3 # layers of GNN
+
+
+features:
+  pca: False
+  pca_fac: 1024
+  automl: False
